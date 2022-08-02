@@ -1,0 +1,90 @@
+/*  GLOBAL STYLES    */
+*,
+*::before ,
+*::after {
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.telegramm {
+    width: 100px;
+    height: 100px;
+    background-color:rgb(35, 126, 182);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.telegramm::after {
+    content: "";
+    width: 96px;
+    height: 96px;
+    border: 1px solid rgb(35, 126, 182);
+    border-radius: 50%;
+    position: absolute;
+
+    animation: telegramAnimation 3s linear infinite ;
+}
+.telegramm::before {
+    content: "";
+    width: 96px;
+    height: 96px;
+    border: 1px solid rgb(35, 126, 182);
+    border-radius: 50%;
+    position: absolute;
+
+    animation: telegramAnimation 3s linear 1.5s infinite ;
+}
+.telegramm-icon {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    object-position: center;
+    animation: iconAnimation 3s ease infinite;
+}
+
+
+@keyframes telegramAnimation {
+    0% {
+
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+@keyframes iconAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    2% {
+        transform: rotate(-25deg);
+    }
+    4% {
+        transform: rotate(25deg);
+    }
+    6% {
+        transform: rotate(-15deg);
+    }
+    8% {
+        transform: rotate(15deg);
+    }
+    8% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform:rotate(0deg);
+    }
+}
