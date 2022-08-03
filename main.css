@@ -20,7 +20,7 @@ body {
 .telegramm {
     width: 100px;
     height: 100px;
-    background-color:rgb(35, 126, 182);
+    background-color:rgb(35, 126, 181);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -30,7 +30,7 @@ body {
     content: "";
     width: 96px;
     height: 96px;
-    border: 1px solid rgb(35, 126, 182);
+    border: 1px solid rgb(35, 126, 181);
     border-radius: 50%;
     position: absolute;
 
